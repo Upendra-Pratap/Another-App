@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.insphired">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--<uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- <uses-permission
+         android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+         tools:ignore="ScopedStorage" />-->
+    <uses-permission android:name="android.permission.READ_MEDIA_*" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.CALL_PHONE"
+        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware"/>
+    <uses-permission
+        android:name="android.permission.GET_TASKS"
+        tools:ignore="MissingPrefix" />
+    <!--
+<uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:launchMode="singleTop"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.app.insphired.EmployeeActivity.NotificationConfirmationActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".EmployeeActivity.BankAccountActivity"
+            android:exported="true" />
+
+        <activity android:name=".EmployeeActivity.RequestJobsActivity"
+            android:exported="true"/>
+        <activity
+            android:name="com.app.insphired.EmployerActivity.CreateJobActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployeeActivity.LocationPickerActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployeeActivity.SearchMapActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.FirstInterfaceApp.EmployerJobPostActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.FirstInterfaceApp.JobSeekerActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.FirstInterfaceApp.FirstInterfaceAppActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployeeActivity.ShowReviewEmployeeActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployeeActivity.EmployeeGiveRatingActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployerActivity.IntroductionVideoActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployeeActivity.LocationActivity"
+            android:exported="true" />
+        <!--
+     Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_baseline_notifications_active_24" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/skyBlue" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDqjJGDdAJK7mwVV43rtTx8h9D-UrAy-4c" />
+
+        <activity
+            android:name="com.app.insphired.EmployerActivity.PdfViewerActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployeeActivity.CVWebViewActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployerActivity.WebViewEmployerActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployerActivity.ProfileEmployerFirstActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployerActivity.WebViewActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployerActivity.BookingActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployerActivity.EmployerHistoryActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployeeActivity.ChatCompanyActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployerActivity.SearchEmployeeActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployerActivity.SettingsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployerActivity.AllEmployeeListActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployeeActivity.EmployeeMessageActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployerActivity.FeedbackActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployerActivity.ReviewEmployerActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployeeActivity.JobDiscriptionActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployeeActivity.EmployeeHistoryActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployeeActivity.CreateSlotActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployeeActivity.MyJobActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployeeActivity.NotificationActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployeeActivity.DashboardActivityEmployee"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployeeActivity.EmployeeProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployeeActivity.EarningListActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployerActivity.SelectSlotsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployerActivity.EditProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployerActivity.ActiveEmployeeActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployerActivity.EmpDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployerActivity.ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployerActivity.ResetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployerActivity.ChangePasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployerActivity.ForgetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployerActivity.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployerActivity.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.app.insphired.EmployerActivity.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployerActivity.DashboardActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.insphired.EmployeeActivity.AvailableSlotsActivity"
+            android:exported="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.app.insphired.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service
+            android:name="com.app.insphired.classes.FirebaseMessageReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

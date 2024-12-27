@@ -1,0 +1,3 @@
+Key alias : insphired2024
+Key password : insphired2024
+Key store password  : insphired2024

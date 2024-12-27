@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "561785049832",
+    "project_id": "insphired-worx",
+    "storage_bucket": "insphired-worx.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561785049832:android:7949bf9dd3fece754d2f5d",
+        "android_client_info": {
+          "package_name": "com.app.insphired"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvZtaLyBVgXa1WBwGrM03lkczr_QCuLIY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
